@@ -1,0 +1,37 @@
+# Ignorar a pasta node_modules
+node_modules/
+
+# Ignorar logs
+logs/
+*.log
+npm-debug.log*
+
+# Ignorar arquivos do sistema operacional
+.DS_Store
+
+# Ignorar arquivos de build do Tailwind CSS (ajuste conforme sua estrutura de projeto)
+public/css/tailwind.css
+public/css/tailwind.min.css
+
+# Ignorar arquivos de build gerados
+dist/
+build/
+
+# Ignorar arquivos de ambiente
+.env
+
+# Ignorar arquivos grandes (ajuste conforme suas necessidades)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.mov
+
+# Ignorar IDEs e editores específicos
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
