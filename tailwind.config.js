@@ -21,6 +21,11 @@ module.exports = {
       },
       backgroundImage: {
         'hero-pattern': "url('https://cdn.pixabay.com/photo/2017/04/06/21/38/cube-2209365_1280.jpg')",
+        'cartao-brawhalla': "url('./src/image/cartao-brawhalla.png')",
+        'cartao-capoeira': "url('./src/image/cartao-capoeira.png')",
+        'cartao-cubomagico': "url('./src/image/cartao-cubomagico.png')",
+        'cartao-fotografia': "url('./src/image/cartao-fotografia.png')",
+        'cartao-tatuagem': "url('./src/image/cartao-tatuagem.png')",
       },
     },
   },
