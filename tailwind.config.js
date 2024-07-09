@@ -21,9 +21,17 @@ module.exports = {
       },
       backgroundImage: {
         'hero-pattern': "url('https://cdn.pixabay.com/photo/2017/04/06/21/38/cube-2209365_1280.jpg')",
+        'cartao-brawlhalla': "url('../image/cartao-brawlhalla.png')",
+        'cartao-capoeira': "url('../image/cartao-capoeira.png')",
+        'cartao-cubomagico': "url('../image/cartao-cubomagico.png')",
+        'cartao-fotografia': "url('../image/cartao-fotografia.png')",
+        'cartao-tatuagem': "url('../image/cartao-tatuagem.png')"
+      },
+      spacing: {
+        'tamanho-cartao': '467px',
+        'largura-cartao': '830px',
       },
     },
   },
   plugins: [],
 }
-

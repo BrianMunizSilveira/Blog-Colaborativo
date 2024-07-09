@@ -587,12 +587,28 @@ video {
   margin-top: 0.5rem;
 }
 
+.flex {
+  display: flex;
+}
+
 .grid {
   display: grid;
 }
 
+.h-tamanho-cartao {
+  height: 467px;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-largura-cartao {
+  max-width: 830px;
 }
 
 .max-w-screen-lg {
@@ -609,6 +625,18 @@ video {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-8 {
@@ -638,8 +666,32 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-cartao-brawlhalla {
+  background-image: url('../image/cartao-brawlhalla.png');
+}
+
+.bg-cartao-capoeira {
+  background-image: url('../image/cartao-capoeira.png');
+}
+
+.bg-cartao-cubomagico {
+  background-image: url('../image/cartao-cubomagico.png');
+}
+
+.bg-cartao-fotografia {
+  background-image: url('../image/cartao-fotografia.png');
+}
+
+.bg-cartao-tatuagem {
+  background-image: url('../image/cartao-tatuagem.png');
+}
+
 .bg-hero-pattern {
   background-image: url('https://cdn.pixabay.com/photo/2017/04/06/21/38/cube-2209365_1280.jpg');
+}
+
+.bg-contain {
+  background-size: contain;
 }
 
 .bg-cover {
@@ -702,6 +754,21 @@ video {
   line-height: 1.75rem;
 }
 
+.text-amarelo {
+  --tw-text-opacity: 1;
+  color: rgb(189 189 63 / var(--tw-text-opacity));
+}
+
+.text-ancora {
+  --tw-text-opacity: 1;
+  color: rgb(0 121 107 / var(--tw-text-opacity));
+}
+
+.text-azul {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 255 / var(--tw-text-opacity));
+}
+
 .text-azul-destaque {
   --tw-text-opacity: 1;
   color: rgb(25 118 210 / var(--tw-text-opacity));
@@ -712,14 +779,9 @@ video {
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
-.text-white {
+.text-laranja {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-amarelo {
-  --tw-text-opacity: 1;
-  color: rgb(189 189 63 / var(--tw-text-opacity));
+  color: rgb(255 165 0 / var(--tw-text-opacity));
 }
 
 .text-verde {
@@ -727,24 +789,14 @@ video {
   color: rgb(0 128 0 / var(--tw-text-opacity));
 }
 
-.text-laranja {
-  --tw-text-opacity: 1;
-  color: rgb(255 165 0 / var(--tw-text-opacity));
-}
-
-.text-azul {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 255 / var(--tw-text-opacity));
-}
-
 .text-vermelho {
   --tw-text-opacity: 1;
   color: rgb(255 0 0 / var(--tw-text-opacity));
 }
 
-.text-ancora {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(0 121 107 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -771,16 +823,6 @@ video {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:text-ancora:hover {
-  --tw-text-opacity: 1;
-  color: rgb(0 121 107 / var(--tw-text-opacity));
-}
-
-.hover\:text-ancora-hover:hover {
-  --tw-text-opacity: 1;
-  color: rgb(0 77 64 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
