@@ -1,0 +1,123 @@
+body{
+    font-family: "outift", sans-serif;
+    background-image: url("../img-tatto/fundo.jpg");
+    background-repeat: repeat;
+    background-size: 115vh;
+}
+main{
+    background: url("../img-tatto/papel.jpeg");
+    margin: 0 auto;
+    width: 75%;
+    min-width: 520px;
+    /* background-attachment: fixed; */
+    /* background-repeat: repeat; */
+}
+.cabecalho{
+    text-align: center;
+    padding: 60px 0;
+    background-color: black;
+}
+.cabecalho h1{
+    color: #d6d4ec;
+    font-size: 45px;
+    letter-spacing: 5px;  
+    background-color: rgba(203, 202, 253, 0.158);  
+}
+
+.img-tatto{
+    width: 250px;
+    /* height: 300px; */
+    
+}
+.btn-seta{
+    background: url('../img-tatto/seta.png') no-repeat center center;
+    background-color: rgba(177, 178, 199, 0.5);
+    width: 40px;
+    height: 40px;
+    border: 0;
+    cursor: pointer;
+    /* border-radius: 50%; */
+    background-size: contain;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.btn-seta.btn-voltar{
+    transform: rotate(180deg);
+}
+.btn-seta:hover{
+    background-color: rgba(200, 253, 255, 0.5);
+}
+.swiper-button-next::after, .swiper-button-prev::after{
+    display: none;
+}
+.swiper{
+    height: 100%;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.534);
+}
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 250px;
+    
+}
+.cartao{
+    align-items: center;
+    justify-content: center;
+    background: url("../img-tatto/cartao.jpeg");
+    width: 350px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: contain;
+    max-height: 100%;
+    margin: 10px;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+
+.cartao .nome{
+    color: #d6d4ec;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+.faixa{
+    width: 100%;
+    background-color: rgba(66, 66, 66, 0.466);
+    text-align: center;
+    margin: 10px;
+}
+
+.cartao .descricao{
+    font-size: 15px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.445);    
+    text-align: justify;
+    max-height: 200px;
+    overflow-y: auto;
+    margin: 15px ;
+    border-radius: 15px;
+}
+.caixa{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+.introducao{
+    color: #d6d4ec;
+    padding: 20px;
+    margin: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.733);  
+    border-radius: 15px; 
+    text-align: justify;
+    margin: 20px 60px;
+}
