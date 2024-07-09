@@ -562,6 +562,14 @@ video {
   margin: 0px;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -587,8 +595,24 @@ video {
   margin-top: 0.5rem;
 }
 
+.flex {
+  display: flex;
+}
+
 .grid {
   display: grid;
+}
+
+.h-tamanho-cartao {
+  height: 467px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-largura-cartao {
+  width: 830px;
 }
 
 .max-w-full {
@@ -597,6 +621,18 @@ video {
 
 .max-w-screen-lg {
   max-width: 1024px;
+}
+
+.max-w-8 {
+  max-width: 2rem;
+}
+
+.max-w-96 {
+  max-width: 24rem;
+}
+
+.max-w-largura-cartao {
+  max-width: 830px;
 }
 
 .transform {
@@ -611,8 +647,20 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .overflow-hidden {
@@ -638,8 +686,32 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-cartao-brawlhalla {
+  background-image: url('../image/cartao-brawlhalla.png');
+}
+
+.bg-cartao-capoeira {
+  background-image: url('../image/cartao-capoeira.png');
+}
+
+.bg-cartao-cubomagico {
+  background-image: url('../image/cartao-cubomagico.png');
+}
+
+.bg-cartao-fotografia {
+  background-image: url('../image/cartao-fotografia.png');
+}
+
+.bg-cartao-tatuagem {
+  background-image: url('../image/cartao-tatuagem.png');
+}
+
 .bg-hero-pattern {
   background-image: url('https://cdn.pixabay.com/photo/2017/04/06/21/38/cube-2209365_1280.jpg');
+}
+
+.bg-contain {
+  background-size: contain;
 }
 
 .bg-cover {
@@ -678,6 +750,10 @@ video {
 
 .pl-5 {
   padding-left: 1.25rem;
+}
+
+.pr-padding-negativo {
+  padding-right: -90px;
 }
 
 .text-center {
@@ -784,7 +860,17 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
