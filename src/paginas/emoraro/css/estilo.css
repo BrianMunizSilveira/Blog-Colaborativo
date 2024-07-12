@@ -1,11 +1,11 @@
 body{
     font-family: "outift", sans-serif;
-    background-image: url("../imagens/fundo.webp");
+    background-image: url('../imagens/fundo.webp');
     background-repeat: repeat;
     background-size: 115vh;
 }
 main{
-    background: url("../imagens/papel.webp");
+    background: url('../imagens/papel.webp');
     margin: 0 auto;
     width: 75%;
     min-width: 520px;
@@ -68,7 +68,7 @@ main{
 .cartao{
     align-items: center;
     justify-content: center;
-    background: url("../imagens/cartao.webp");
+    background: url('../imagens/cartao.webp');
     width: 350px;
     border-radius: 15px;
     display: flex;
