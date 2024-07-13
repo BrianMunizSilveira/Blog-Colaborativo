@@ -9,6 +9,7 @@ Bem-vindo(a) ao nosso blog colaborativo entre amigos! Este projeto é uma plataf
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Desenvolvedores](#desenvolvedores)
 
+  ![Print do Projeto](https://i.imgur.com/onLdvRY.png)
 ## Descrição do Projeto
 
 Nosso blog colaborativo é um espaço para amigos compartilharem seus interesses e conhecimentos. Cada colaborador tem uma página dedicada para explorar suas paixões, desde fotografia até jogos online.
