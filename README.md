@@ -15,7 +15,7 @@
 Bem-vindo(a), ao nosso blog colaborativo entre amigos.
 
 ## Deploy da Aplicação :dash:
-> Link do Deploy: https://blog-colaborativo.vercel.app/
+> Link do Deploy: https://nosso-blog.vercel.app/
 
 <h2 id="tecnologias">Tecnologias utilizadas</h2>
 
