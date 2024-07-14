@@ -5,190 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Blog Colaborativo">
-    <link rel="stylesheet" href="../src/estilos/estilos.css">
-    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=55004&format=png&color=000000"
-        type="image/x-icon">
-        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="author" content="Brian Muniz Silveira">
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=55004&format=png&color=000000" type="image/x-icon">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&family=Raleway:wght@400;700&family=Bree+Serif&family=Amatic+SC:wght@400;700&family=Pacifico&family=Roboto:wght@400;700&family=Orbitron:wght@400;700&family=Exo:wght@400;700&family=Great+Vibes&family=Rock+Salt&family=Blackletter&family=Bangers&family=Press+Start+2P&family=Cinzel:wght@400;700&display=swap">
     <title>Blog Colaborativo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            background: url('./src/imagens/bg.avif') no-repeat center center fixed;
-            background-size: cover;
-        }
-
-        header {
-            background-color: #00000094;
-            color: #ffffff38;
-            padding: 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header img {
-            height: 40px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 1rem;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav a {
-            color: #0fff07;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            transition: background 0.3s;
-        }
-
-        nav a:hover {
-            background: #000000;
-        }
-
-        .bem-vindo {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            background-color: #00000094;
-            color: #fff;
-            padding: 2rem;
-            text-align: center;
-            margin: 0;
-            font-size: 1.3rem;
-        }
-
-        .bem-vindo p {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 1rem;
-            text-align: justify;
-        }
-
-        section {
-            padding: 2rem;
-            text-align: center;
-        }
-
-        main {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-            padding: 2rem;
-        }
-
-        .card {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            max-width: 350px;
-            width: 100%;
-            text-align: left;
-        }
-
-        .card h2 {
-            background: #333;
-            color: #fff;
-            margin: 0;
-            padding: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .card p {
-            padding: 1rem;
-            color: #666;
-        }
-
-        #coffee {
-            background: #26262D url('./src/imagens/cartao-fotografia.webp') center center no-repeat;
-            background-size: contain;
-        }
-
-        #coffee p {
-            background-color: #00000094;
-            color: #fff;
-        }
-
-        #carlos {
-            background: #678CAA url('./src/imagens/cartao-capoeira.webp') center center no-repeat;
-            background-size: contain;
-        }
-
-        #carlos p {
-            background-color: #00000094;
-            color: #fff;
-        }
-
-        #decfalter {
-            background: #100528 url('./src/imagens/cartao-cubomagico.webp') center no-repeat;
-            background-size: contain;
-        }
-
-        #decfalter p {
-            background-color: #00000094;
-            color: #fff;
-        }
-
-        #emo { 
-            background: #1B1A20 url('./src/imagens/cartao-tatuagem.webp') center center no-repeat;
-            background-size: contain;
-        }
-
-        #emo p {
-            background-color: #00000094;
-            color: #fff;
-        }
-
-        #pedrinho {
-            background: #CF7521 url('./src/imagens/cartao-brawhalla.webp') center center no-repeat;
-            background-size: contain;
-        }
-
-        #pedrinho p {
-            background-color: #00000094;
-            color: #fff;
-        }
-
-        #mit {
-            color: #0fff07;
-            transition: color 0.3s;
-        }
-
-        #mit:hover {
-            color: #069c01;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #333333b6;
-            color: #fff;
-            bottom: 0;
-        }
-    </style>
 </head>
 
 <body>
     <header>
-        <a href="#"><img src="https://img.icons8.com/?size=100&id=55004&format=png&color=000000"
-                alt="Logo do Blog Colaborativo"></a>
+        <a href="#"><img src="https://img.icons8.com/?size=100&id=55004&format=png&color=000000" alt="Logo do Blog Colaborativo"></a>
         <nav>
-            <ul>
-                <li><a href="#">Carlos - Capoeira</a></li>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
                 <li><a href="#">Coffe - Fotografias</a></li>
+                <li><a href="#">Carlos - Capoeira</a></li>
                 <li><a href="./src/paginas/decfalter/index.html">Decfalter - Cubo Mágico</a></li>
                 <li><a href="./src/paginas/emoraro/index.html">Emo - Tatto</a></li>
                 <li><a href="#">Pedrinho - Brawlhalla</a></li>
             </ul>
         </nav>
     </header>
+    
     <section class="bem-vindo">
         <h2>Bem-Vindo(a) ao nosso Blog</h2>
         <p>Bem-vindo ao nosso blog colaborativo, um espaço onde amigos se reúnem para compartilhar suas paixões e
@@ -199,33 +39,37 @@
     <main>
         <section class="card" id="coffee">
             <h2>Coffe - O Fotográfo</h2>
+            <img src="./src/imagens/cartao-fotografia.webp" alt="Coffe - O Fotográfo">
             <p>Coffe tem um olhar único para capturar a beleza do mundo através das lentes de sua câmera. Em sua página,
                 você encontrará uma coleção de fotografias que refletem sua visão artística e paixão por documentar
                 momentos especiais.</p>
         </section>
         <section class="card" id="carlos">
             <h2>Carlos - O Capoeirista</h2>
+            <img src="./src/imagens/cartao-capoeira.webp" alt="Carlos - O Capoeirista">
             <p>Carlos é um capoeirista apaixonado que vive e respira a arte da Capoeira. Em sua página, ele explora a
                 história, os movimentos e a cultura por trás desta arte marcial brasileira. Aprenda mais sobre a
                 Capoeira e como ela combina luta, dança e música em uma forma de expressão única.</p>
         </section>
         <section class="card" id="decfalter">
             <h2>Decfalter - O Speedcuber</h2>
+            <img src="./src/imagens/cartao-cubomagico.webp" alt="Decfalter - O Speedcuber">
             <p>Decfalter é um verdadeiro mestre do Cubo Mágico. Ele compartilha um trecho da evolução do cubo mágico,
                 desde sua criação ao dias contemporâneos. Acompanhe sua postagem para deslumbrar sobre um pouco mais
                 sobre o assunto.</p>
         </section>
         <section class="card" id="emo">
             <h2>Emo - O Tatuador</h2>
+            <img src="./src/imagens/cartao-tatuagem.webp" alt="Emo - O Tatuador">
             <p>Emo é um tatuador talentoso que transforma a pele em uma tela viva. Em sua página, ele mostra seus
                 designs criativos e fala sobre o processo de criação e a arte de tatuar. Conheça suas inspirações e veja
                 como ele transforma ideias em arte corporal.</p>
         </section>
         <section class="card" id="pedrinho">
             <h2>Pedrinho - O Entusiasta do Brawlhalla</h2>
+            <img src="./src/imagens/cartao-brawhalla.webp" alt="Pedrinho - O Entusiasta do Brawlhalla">
             <p>Pedrinho é um entusiasta do jogo Brawlhalla, um popular jogo de luta online. Ele compartilha estratégias,
-                análises de personagens e dicas para melhorar suas habilidades no jogo. Se você é fã de Brawlhalla, não
-                perca as atualizações de Pedrinho!</p>
+                análises de personagens e dicas para melhorar suas habilidades no jogo.</p>
         </section>
     </main>
     <footer>
@@ -233,5 +77,7 @@
         <p>Licenciado sob a <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer"><strong id="mit">Licença MIT</strong></a></p>
     </footer>
 </body>
+
+<script src="./js/script.js"></script>
 
 </html>

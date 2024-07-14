@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+:root {
+    --primary-color: #646464; /* Cinza */
+    --secondary-color-1:  #00d100; /* Verde */
+    --secondary-color-2: #424242; /* Cinza Escuro */
+    --font-fotografia: 'Montserrat', sans-serif;
+    --font-capoeira: 'Bree Serif', serif;
+    --font-speedcubing: 'Roboto', sans-serif;
+    --font-tatuagem: 'Great Vibes', cursive;
+    --font-brawlhalla: 'Bangers', cursive;
+    --background-opacity: #00000094;
+    --text-opacity: #ffffff38;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    background: url('../src/imagens/bg.avif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: var(--background-opacity);
+    color: var(--text-opacity);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+header img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: var(--secondary-color-1);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: var(--secondary-color-2);
+}
+
+.bem-vindo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--background-opacity);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.bem-vindo p {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: justify;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--background-opacity);
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card {
+    background: var(--secondary-color-2);
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 350px;
+    width: 100%;
+    text-align: left;
+    height: 400px; /* Altura fixa para o card */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.card h2 {
+    background: var(--primary-color);
+    color: #fff;
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.card p {
+    padding: 1rem;
+    text-align: justify;
+    background-color: var(--background-opacity);
+    color: #fff;
+}
+
+
+#coffee .card h2 p {
+    font-family: var(--font-fotografia);
+
+}
+
+#carlos .card h2 p {
+    font-family: var(--font-capoeira);
+}
+
+#decfalter .card h2 p {
+    font-family: var(--font-speedcubing);
+}
+
+#emo .card h2 p {
+    font-family: var(--font-tatuagem);
+}
+
+#pedrinho .card h2 p {
+    font-family: var(--font-brawlhalla);
+}
+
+#mit {
+    color: var(--secondary-color-1);
+    transition: color 0.3s;
+}
+
+#mit:hover {
+    color: #00d100;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--background-opacity);
+    color: #fff;
+    bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        color: var(--secondary-color-1);
+        transition: color 0.4s;
+    }
+
+    .menu-icon:hover {
+        color: var(--secondary-color-2);
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--background-opacity);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+    }
+}
