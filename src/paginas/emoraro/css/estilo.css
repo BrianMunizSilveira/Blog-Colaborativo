@@ -3,6 +3,7 @@ body{
     background-image: url('../imagens/fundo.webp');
     background-repeat: repeat;
     background-size: 115vh;
+    background-color: rgb(19, 19, 19);
 }
 main{
     background: url('../imagens/papel.webp');
@@ -68,6 +69,7 @@ main{
 .cartao{
     align-items: center;
     justify-content: center;
+    background-color: rgb(15, 15, 15);
     background: url('../imagens/cartao.webp');
     width: 350px;
     border-radius: 15px;
@@ -85,6 +87,13 @@ main{
     font-size: 30px;
     letter-spacing: 3px;
 }
+
+.cartao .apelido{
+    color: #d6d4ec;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
 .faixa{
     width: 100%;
     background-color: rgba(66, 66, 66, 0.466);
