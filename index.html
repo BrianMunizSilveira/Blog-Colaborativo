@@ -5,69 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Blog Colaborativo">
-    <link rel="stylesheet" href="./src/estilos/reset.css">
-    <link rel="stylesheet" href="./src/estilos/estilos.css">
+    <meta name="author" content="Brian Muniz Silveira">
+    <link rel="stylesheet" href="./estilos/estilos.css">
     <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=55004&format=png&color=000000" type="image/x-icon">
-    <link rel="stylesheet" href="./src/estilos/output.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&family=Raleway:wght@400;700&family=Bree+Serif&family=Amatic+SC:wght@400;700&family=Pacifico&family=Roboto:wght@400;700&family=Orbitron:wght@400;700&family=Exo:wght@400;700&family=Great+Vibes&family=Rock+Salt&family=Blackletter&family=Bangers&family=Press+Start+2P&family=Cinzel:wght@400;700&display=swap">
     <title>Blog Colaborativo</title>
 </head>
 
 <body>
     <header>
-        <a href="#"><img src="https://images.unsplash.com/photo-1518976024611-28bf4b48222e?q=80&w=1370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Logo do Blog Colaborativo"></a>
+        <a href="#"><img src="https://img.icons8.com/?size=100&id=55004&format=png&color=000000" alt="Logo do Blog Colaborativo"></a>
         <nav>
-            <ul>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
                 <li><a href="#">Coffe - Fotografias</a></li>
+                <li><a href="#">Carlos - Capoeira</a></li>
                 <li><a href="./src/paginas/decfalter/index.html">Decfalter - Cubo Mágico</a></li>
                 <li><a href="./src/paginas/emoraro/index.html">Emo - Tatto</a></li>
                 <li><a href="#">Pedrinho - Brawlhalla</a></li>
-                <li><a href="#">Carlos - Capoeira</a></li>
             </ul>
         </nav>
     </header>
+    
+    <section class="bem-vindo">
+        <h2>Bem-Vindo(a) ao nosso Blog</h2>
+        <p>Bem-vindo ao nosso blog colaborativo, um espaço onde amigos se reúnem para compartilhar suas paixões e
+            experiências. Cada página de nossos colaboradores oferece um vislumbre único sobre suas vidas,
+            interesses e conhecimentos. Explore e descubra um pouco mais sobre cada um de nós através de nossos
+            conteúdos exclusivos.</p>
+    </section>
     <main>
-        <section>
-            <h2>Bem-Vindo(a) ao nosso Blog</h2>
-            <p>Bem-vindo ao nosso blog colaborativo, um espaço onde amigos se reúnem para compartilhar suas paixões e
-                experiências. Cada página de nossos colaboradores oferece um vislumbre único sobre suas vidas,
-                interesses e conhecimentos. Explore e descubra um pouco mais sobre cada um de nós através de nossos
-                conteúdos exclusivos.</p>
-        </section>
-        <section>
+        <section class="card" id="coffee">
             <h2>Coffe - O Fotográfo</h2>
+            <img src="./src/imagens/cartao-fotografia.webp" alt="Coffe - O Fotográfo">
             <p>Coffe tem um olhar único para capturar a beleza do mundo através das lentes de sua câmera. Em sua página,
                 você encontrará uma coleção de fotografias que refletem sua visão artística e paixão por documentar
                 momentos especiais.</p>
         </section>
-        <section>
-            <h2>Decfalter - O Speedcuber</h2>
-            <p>Decfalter é um verdadeiro mestre do Cubo Mágico. Ele compartilha um trecho da evolução do cubo mágico,
-                desde sua criação ao dias contemporâneos. Acompanhe sua postagem para deslumbrar sobre um pouco mais
-                sobre o assunto.</p>
-        </section>
-        <section>
-            <h2>Emo - O Tatuador</h2>
-            <p>Emo é um tatuador talentoso que transforma a pele em uma tela viva. Em sua página, ele mostra seus
-                designs criativos e fala sobre o processo de criação e a arte de tatuar. Conheça suas inspirações e veja
-                como ele transforma ideias em arte corporal.</p>
-        </section>
-        <section>
-            <h2>Pedrinho - O Entusiasta do Brawlhalla</h2>
-            <p>Pedrinho é um entusiasta do jogo Brawlhalla, um popular jogo de luta online. Ele compartilha estratégias,
-                análises de personagens e dicas para melhorar suas habilidades no jogo. Se você é fã de Brawlhalla, não
-                perca as atualizações de Pedrinho!</p>
-        </section>
-        <section>
+        <section class="card" id="carlos">
             <h2>Carlos - O Capoeirista</h2>
+            <img src="./src/imagens/cartao-capoeira.webp" alt="Carlos - O Capoeirista">
             <p>Carlos é um capoeirista apaixonado que vive e respira a arte da Capoeira. Em sua página, ele explora a
                 história, os movimentos e a cultura por trás desta arte marcial brasileira. Aprenda mais sobre a
                 Capoeira e como ela combina luta, dança e música em uma forma de expressão única.</p>
         </section>
+        <section class="card" id="decfalter">
+            <h2>Decfalter - O Speedcuber</h2>
+            <img src="./src/imagens/cartao-cubomagico.webp" alt="Decfalter - O Speedcuber">
+            <p>Decfalter é um verdadeiro mestre do Cubo Mágico. Ele compartilha um trecho da evolução do cubo mágico,
+                desde sua criação ao dias contemporâneos. Acompanhe sua postagem para deslumbrar sobre um pouco mais
+                sobre o assunto.</p>
+        </section>
+        <section class="card" id="emo">
+            <h2>Emo - O Tatuador</h2>
+            <img src="./src/imagens/cartao-tatuagem.webp" alt="Emo - O Tatuador">
+            <p>Emo é um tatuador talentoso que transforma a pele em uma tela viva. Em sua página, ele mostra seus
+                designs criativos e fala sobre o processo de criação e a arte de tatuar. Conheça suas inspirações e veja
+                como ele transforma ideias em arte corporal.</p>
+        </section>
+        <section class="card" id="pedrinho">
+            <h2>Pedrinho - O Entusiasta do Brawlhalla</h2>
+            <img src="./src/imagens/cartao-brawhalla.webp" alt="Pedrinho - O Entusiasta do Brawlhalla">
+            <p>Pedrinho é um entusiasta do jogo Brawlhalla, um popular jogo de luta online. Ele compartilha estratégias,
+                análises de personagens e dicas para melhorar suas habilidades no jogo.</p>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2024 Blog Colaborativo. Todos os direitos reservados.</p>
+        <p><i class="fas fa-code-branch"></i> 2024 Blog Colaborativo | Código aberto.</p>
+        <p>Licenciado sob a <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer"><strong id="mit">Licença MIT</strong></a></p>
     </footer>
-    <script src="#"></script>
 </body>
+
+<script src="./js/script.js"></script>
 
 </html>

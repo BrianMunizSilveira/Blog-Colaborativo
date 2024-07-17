@@ -1,10 +1,186 @@
-/* styles.css */
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Oxanium&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 
-.amarelo { color: #bdbd3f; }
-.verde { color: #008000; }
-.laranja { color: #ffa500; }
-.azul { color: #0000ff; }
-.vermelho { color: #ff0000; }
+h2 {
+    margin-top: 30px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.slide-content {
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.836);
+    color: white;
+    border-radius: 1%;
+    margin: 10px;
+}
+
+.slide p {
+    max-width: 550px;
+    line-height: 1.6;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-button {
+    background-color: rgba(12, 0, 185, 0.671);
+    border: none;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.623);
+}
+
+.amarelo {
+    color: yellow;
+}
+
+.verde {
+    color: green;
+}
+
+.azul {
+    color: #183aff;
+}
+
+.laranja {
+    color: orange;
+}
+
+.vermelho {
+    color: red;
+}
+
+a {
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a:hover {
+    transition: color 0.3s ease-in-out;
+    color: rgb(255, 166, 0);
+}
+
+#bg1 {
+    background: #000 url('https://imgs.search.brave.com/v2FcNrBufXb_DAA-ivjJfefTvAOZFMuTS00LhLi_ghk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mb3J0/dW5lLmNvbS9pbWct/YXNzZXRzL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIyLzEyL0FQ/MjIzMzU2MjcwOTA5/NjUtMS5qcGc_dz0x/NDQwJnE9NzU') center center no-repeat fixed;
+    background-size: cover;
+}
+
+#bg2 {
+    background: #000 url('http://www.ws.binghamton.edu/fridrich/images/winners.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+#bg3 {
+    background: #000 url('https://mega.ibxk.com.br/2017/03/07/07175349597081.jpg') center top no-repeat fixed;
+    background-size: cover;
+}
+
+#bg4 {
+    background: #000 url('https://media.cnn.com/api/v1/images/stellar/prod/230615092458-max-park-rubiks-cube-world-record-1.jpg?c=original') center top no-repeat fixed;
+    background-size: cover;
+}
+
+#bg5 {
+    background: #000 url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Rubik%27s_Cube_Collection_%284316806619%29.jpg/1200px-Rubik%27s_Cube_Collection_%284316806619%29.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+#bg6 {
+    background: #000 url('https://i.ytimg.com/vi/bilYS4Zx0cA/maxresdefault.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+#bg7 {
+    background: #000000 url('https://www.thecubicle.com/cdn/shop/products/moyu-huameng-ys3m-maglev-ball-core.jpg?v=1677090986') center center no-repeat fixed;
+    background-size: cover;
+}
+
+#bg8 {
+    background: #000 url('https://images.unsplash.com/photo-1615748264528-4b628f8d879f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') left center no-repeat fixed;
+    background-size: cover;
+}
+
+#bg9 {
+    background: #000 url('https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2021/04/12232304/Worlds-Largest-Rubiks-Cube-feature-image-04162021.jpg') left center no-repeat fixed;
+    background-size: cover;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+li {
+    margin: 5px;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .slide p {
+        font-size: 16px;
+    }
+
+    .carousel-button {
+        background-color: rgba(12, 0, 185, 0.514);
+        border: none;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 50%;
+        margin: 0 10px;
+    }
+
+    ul {
+        columns: 2;
+    }
+
+}

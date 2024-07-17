@@ -1,12 +1,12 @@
 body{
     font-family: "outift", sans-serif;
-    background-image: url("../img-tatto/fundo.jpg");
+    background-image: url('../imagens/fundo.webp');
     background-repeat: repeat;
     background-size: 115vh;
     background-color: rgb(19, 19, 19);
 }
 main{
-    background: url("../img-tatto/papel.jpeg");
+    background: url('../imagens/papel.webp');
     margin: 0 auto;
     width: 75%;
     min-width: 520px;
@@ -31,7 +31,7 @@ main{
     
 }
 .btn-seta{
-    background: url('../img-tatto/seta.png') no-repeat center center;
+    background: url('../imagens/seta.webp') no-repeat center center;
     background-color: rgba(177, 178, 199, 0.5);
     width: 40px;
     height: 40px;
@@ -69,8 +69,8 @@ main{
 .cartao{
     align-items: center;
     justify-content: center;
-    background: url("../img-tatto/cartao.jpeg");
     background-color: rgb(15, 15, 15);
+    background: url('../imagens/cartao.webp');
     width: 350px;
     border-radius: 15px;
     display: flex;
