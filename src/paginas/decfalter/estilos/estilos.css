@@ -42,13 +42,14 @@ h2 {
     max-width: 800px;
     background-color: rgba(0, 0, 0, 0.836);
     color: white;
-    border-radius: 1%;
+    border-radius: 15px;
     margin: 10px;
 }
 
 .slide p {
     max-width: 550px;
-    line-height: 1.6;
+    line-height: 1.6rem;
+    text-align: justify;
     font-size: 18px;
     padding: 20px;
 }
@@ -85,7 +86,7 @@ h2 {
 }
 
 .azul {
-    color: #183aff;
+    color: #506aff;
 }
 
 .laranja {
@@ -108,47 +109,52 @@ a:hover {
 }
 
 #bg1 {
-    background: #000 url('https://imgs.search.brave.com/v2FcNrBufXb_DAA-ivjJfefTvAOZFMuTS00LhLi_ghk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mb3J0/dW5lLmNvbS9pbWct/YXNzZXRzL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIyLzEyL0FQ/MjIzMzU2MjcwOTA5/NjUtMS5qcGc_dz0x/NDQwJnE9NzU') center center no-repeat fixed;
+    background: #000 url('../imagens/erno-rubik.webp') center center no-repeat fixed;
     background-size: cover;
 }
 
 #bg2 {
-    background: #000 url('http://www.ws.binghamton.edu/fridrich/images/winners.jpg') center center no-repeat fixed;
+    background: #000 url('../imagens/winners.webp') center center no-repeat fixed;
     background-size: cover;
 }
 
 #bg3 {
-    background: #000 url('https://mega.ibxk.com.br/2017/03/07/07175349597081.jpg') center top no-repeat fixed;
+    background: #000 url('../imagens/you-can-do-the-cube.webp') center top no-repeat fixed;
     background-size: cover;
 }
 
 #bg4 {
-    background: #000 url('https://media.cnn.com/api/v1/images/stellar/prod/230615092458-max-park-rubiks-cube-world-record-1.jpg?c=original') center top no-repeat fixed;
+    background: #000 url('../imagens/max-park-rubiks-cube-world-record.webp') center top no-repeat fixed;
     background-size: cover;
 }
 
 #bg5 {
-    background: #000 url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Rubik%27s_Cube_Collection_%284316806619%29.jpg/1200px-Rubik%27s_Cube_Collection_%284316806619%29.jpg') center center no-repeat fixed;
+    background: #000 url('../imagens/variantes.webp') center center no-repeat fixed;
     background-size: cover;
 }
 
 #bg6 {
-    background: #000 url('https://i.ytimg.com/vi/bilYS4Zx0cA/maxresdefault.jpg') center center no-repeat fixed;
+    background: #000 url('../imagens/smith-and-cube.webp') center center no-repeat fixed;
     background-size: cover;
 }
 
 #bg7 {
-    background: #000000 url('https://www.thecubicle.com/cdn/shop/products/moyu-huameng-ys3m-maglev-ball-core.jpg?v=1677090986') center center no-repeat fixed;
+    background: #000000 url('../imagens/moyu-huameng-ys3m-maglev-ball-core.webp') center center no-repeat fixed;
     background-size: cover;
 }
 
 #bg8 {
-    background: #000 url('https://images.unsplash.com/photo-1615748264528-4b628f8d879f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') left center no-repeat fixed;
+    background: #000 url('../imagens/rubiks-cube-on-the-table.webp') left center no-repeat fixed;
     background-size: cover;
 }
 
 #bg9 {
-    background: #000 url('https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2021/04/12232304/Worlds-Largest-Rubiks-Cube-feature-image-04162021.jpg') left center no-repeat fixed;
+    background: #000 url('../imagens/worlds-largest-rubiks-cube-feature.webp') left center no-repeat fixed;
+    background-size: cover;
+}
+
+#bg10 {
+    background: #fff url('../imagens/184044-872413572_small.gif') center center no-repeat fixed;
     background-size: cover;
 }
 
