@@ -1,192 +1,83 @@
-body {
-    font-family: Arial, sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
-h2 {
-    margin-top: 30px;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
 }
 
-.carousel {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
-    height: 100%;
-}
-
-.slide {
-    flex: 0 0 100%;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header {
     text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
 }
 
-.slide-content {
+.slider {
+    position: relative;
     max-width: 800px;
-    background-color: rgba(0, 0, 0, 0.836);
-    color: white;
-    border-radius: 15px;
-    margin: 10px;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
 }
 
-.slide p {
-    max-width: 550px;
-    line-height: 1.6rem;
-    text-align: justify;
-    font-size: 18px;
-    padding: 20px;
-}
-
-.carousel-controls {
-    position: absolute;
-    top: 50%;
-    width: 100%;
+.slider-inner {
     display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
+    transition: transform 0.5s ease;
 }
 
-.carousel-button {
-    background-color: rgba(12, 0, 185, 0.671);
-    border: none;
-    color: white;
+.item {
+    min-width: 100%;
     padding: 20px;
-    cursor: pointer;
-    border-radius: 50%;
-    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.carousel-button:hover {
-    background-color: rgba(0, 0, 0, 0.623);
+.item-content {
+    text-align: center;
 }
 
-.amarelo {
-    color: yellow;
+.highlight-yellow {
+    color: #ffcc00;
 }
 
-.verde {
-    color: green;
+.highlight-green {
+    color: #28a745;
 }
 
-.azul {
-    color: #506aff;
+.highlight-orange {
+    color: #ff6f00;
 }
 
-.laranja {
-    color: orange;
+.highlight-blue {
+    color: #007bff;
 }
 
-.vermelho {
-    color: red;
+.highlight-red {
+    color: #dc3545;
 }
 
-a {
-    color: red;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-a:hover {
-    transition: color 0.3s ease-in-out;
-    color: rgb(255, 166, 0);
-}
-
-#bg1 {
-    background: #000 url('../imagens/erno-rubik.webp') center center no-repeat fixed;
-    background-size: cover;
-}
-
-#bg2 {
-    background: #000 url('../imagens/winners.webp') center center no-repeat fixed;
-    background-size: cover;
-}
-
-#bg3 {
-    background: #000 url('../imagens/you-can-do-the-cube.webp') center top no-repeat fixed;
-    background-size: cover;
-}
-
-#bg4 {
-    background: #000 url('../imagens/max-park-rubiks-cube-world-record.webp') center top no-repeat fixed;
-    background-size: cover;
-}
-
-#bg5 {
-    background: #000 url('../imagens/variantes.webp') center center no-repeat fixed;
-    background-size: cover;
-}
-
-#bg6 {
-    background: #000 url('../imagens/smith-and-cube.webp') center center no-repeat fixed;
-    background-size: cover;
-}
-
-#bg7 {
-    background: #000000 url('../imagens/moyu-huameng-ys3m-maglev-ball-core.webp') center center no-repeat fixed;
-    background-size: cover;
-}
-
-#bg8 {
-    background: #000 url('../imagens/rubiks-cube-on-the-table.webp') left center no-repeat fixed;
-    background-size: cover;
-}
-
-#bg9 {
-    background: #000 url('../imagens/worlds-largest-rubiks-cube-feature.webp') left center no-repeat fixed;
-    background-size: cover;
-}
-
-#bg10 {
-    background: #fff url('https://i.redd.it/d8n690lywv971.gif') center center no-repeat fixed;
-    background-size: cover;
-}
-
-ul {
+.resource-list {
     list-style: none;
-    padding: 10px;
+}
+
+button {
     margin: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-li {
-    margin: 5px;
-    text-align: left;
-}
-
-@media screen and (max-width: 768px) {
-    
-    .slide p {
-        font-size: 16px;
-    }
-
-    .carousel-button {
-        background-color: rgba(12, 0, 185, 0.514);
-        border: none;
-        color: white;
-        padding: 10px;
-        cursor: pointer;
-        border-radius: 50%;
-        margin: 0 10px;
-    }
-
-    ul {
-        columns: 2;
-    }
-
+button:hover {
+    background-color: #0056b3;
 }

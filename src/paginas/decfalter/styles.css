@@ -1,0 +1,174 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 20%;
+    background-color: #f0a500; /* Cor de fundo da sidebar */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar .profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar h1 {
+    font-size: 1.8rem; /* Aumentado para destaque */
+    color: white;
+}
+
+.sidebar ul {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s; /* Efeito de transição */
+}
+
+.sidebar ul li a:hover {
+    color: #36827f; /* Mudança de cor ao passar o mouse */
+}
+
+/* Main Content Styling */
+.content {
+    width: 80%;
+    padding: 40px;
+    overflow-y: auto; /* Alterado para 'auto' para evitar barras de rolagem desnecessárias */
+    background-color: #e9e9e9; /* Cor de fundo do conteúdo */
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+section > p {
+    line-height: 1.4;
+    font-size: 1.1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3772ff; /* Cor do título */
+}
+
+button {
+    background-color: #3772ff; /* Cor do botão */
+    color: white;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+
+button:hover {
+    background-color: #36827f; /* Mudança de cor ao passar o mouse */
+}
+
+.highlight {
+    color: #fdca40; /* Cor do destaque */
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que os itens se movam para a próxima linha */
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.stats div {
+    background-color: #36827f; /* Cor de fundo dos itens de estatística */
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1 1 calc(30% - 20px); /* Permite que os itens ocupem 30% do espaço, com margens */
+    min-width: 150px; /* Largura mínima para garantir legibilidade */
+}
+
+.solving-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.solving-grid ul {
+    margin: 1rem;
+    list-style: square;
+    text-align: justify;
+}
+
+.solving-grid ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Sidebar ocupa 100% da largura em telas menores */
+        height: auto; /* Permitir altura automática */
+    }
+
+    .content {
+        width: 100%; /* Conteúdo ocupa 100% da largura */
+        padding: 20px; /* Reduzir padding */
+    }
+
+    .solving-grid {
+        grid-template-columns: 1fr; /* Um item por linha */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Diminuir o tamanho do título */
+    }
+
+    .stats {
+        flex-direction: column; /* Itens em coluna em telas menores */
+        align-items: center; /* Centralizar os itens */
+    }
+
+    .stats div {
+        flex: 1 1 auto; /* Flexibilidade total em colunas */
+        margin: 5px 0; /* Margem vertical */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2rem; /* Diminuir ainda mais o tamanho do título */
+    }
+
+    button {
+        padding: 0.4rem 0.8rem; /* Reduzir o padding do botão */
+    }
+
+    .sidebar h1 {
+        font-size: 1.5rem; /* Ajustar título da sidebar */
+    }
+}
