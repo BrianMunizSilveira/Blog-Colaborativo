@@ -1,14 +1,45 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Container Layout */
 .container {
     display: flex;
     height: 100vh;
+}
+
+/* Botão de hambúrguer */
+.hamburger {
+    display: none; /* Escondido por padrão */
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Botão para fechar a sidebar */
+.close-btn {
+    display: none; /* Escondido por padrão */
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
 }
 
 /* Sidebar Styling */
@@ -19,6 +50,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* Quando a sidebar está ativa */
+.sidebar.active {
+    transform: translateX(0); /* Mover para dentro da tela */
 }
 
 .sidebar .profile {
@@ -67,6 +103,27 @@ section {
 section > p {
     line-height: 1.4;
     font-size: 1.1rem;
+}
+
+section#tips {
+    margin: 1rem;
+}
+
+section#tips > ul li {
+    list-style: none;
+    margin: 1rem;
+}
+
+section#solving {
+    margin: 1rem;
+}
+
+section#solving p {
+    margin-bottom: 1rem;
+}
+
+section#solving div > ul li {
+    list-style: none;
 }
 
 h2 {
@@ -130,6 +187,32 @@ button:hover {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Mostrar o botão de hambúrguer em telas menores */
+    }
+
+    .sidebar {
+        position: fixed;
+        left: -100%; /* Esconder a sidebar fora da tela */
+        width: 60%; /* Sidebar ocupa 60% da largura da tela */
+        transition: left 0.3s ease; /* Transição suave */
+        height: 100vh;
+        z-index: 1000;
+        background-color: #f0a500; /* Mantém a cor de fundo */
+    }
+
+    .sidebar.active {
+        left: 0; /* Quando ativa, sidebar entra na tela */
+    }
+
+    .close-btn {
+        display: block; /* Exibir o botão de fechar quando a sidebar estiver visível */
+    }
+
+    .content {
+        width: 100%; /* Ajuste o conteúdo para ocupar 100% da tela */
+    }
+
     .sidebar {
         width: 100%; /* Sidebar ocupa 100% da largura em telas menores */
         height: auto; /* Permitir altura automática */
