@@ -28,7 +28,7 @@ Nosso blog colaborativo é um espaço para amigos compartilharem seus interesses
 
 ## Desenvolvedores
 
-| [<img src="https://avatars.githubusercontent.com/u/155079481?v=4" width=115><br><sub>Decfalter</sub>](https://github.com/BrianMunizSilveira) | [<img src="https://avatars.githubusercontent.com/u/71583668?v=4" width=115><br><sub>Coffe</sub>](https://github.com/ArthurFerreiraBorges) | [<img src="https://avatars.githubusercontent.com/u/158277340?v=4" width=115><br><sub>Carlos</sub>](https://github.com/carlosvfb) | [<img src="https://avatars.githubusercontent.com/u/65430305?v=4" width=115><br><sub>EmoRaro</sub>](https://github.com/EmoRaro) | [Pedrinho](#) |
+| [<img src="https://avatars.githubusercontent.com/u/155079481?v=4" width=115><br><sub>Decfalter</sub>](https://github.com/BrianMunizSilveira) | [<img src="https://avatars.githubusercontent.com/u/71583668?v=4" width=115><br><sub>Coffe</sub>](https://github.com/ArthurFerreiraBorges) | [<img src="https://avatars.githubusercontent.com/u/158277340?v=4" width=115><br><sub>Carlos</sub>](https://github.com/carlosvfb) | [<img src="https://avatars.githubusercontent.com/u/65430305?v=4" width=115><br><sub>EmoRaro</sub>](https://github.com/EmoRaro) |  |
 | :---: | :---: | :---: | :---: | :---: |
 
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/> ![Desenvolvedores](https://img.shields.io/static/v1?label=DESENVOLVEDORES&message=Coffe,%20Carlos,%20Decfalter,%20Emo,%20Pedrinho.&color=RED&style=for-the-badge) <img src="https://img.shields.io/static/v1?label=Vercel&message=deploy&color=black&style=for-the-badge&logo=vercel"/> <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
