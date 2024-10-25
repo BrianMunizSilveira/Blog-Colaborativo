@@ -10,8 +10,9 @@
     <meta property="og:title" content="Blog Colaborativo">
     <meta property="og:description" content="Um espaço para explorar as paixões e interesses dos nossos colaboradores.">
     <meta property="og:image" content="https://img.icons8.com/?size=100&id=55004&format=png&color=000000">
-    <meta property="og:url" content="http://seusite.com">
+    <meta property="og:url" content="https://nosso-blog.vercel.app/">
     <link rel="stylesheet" href="./estilos/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=55004&format=png&color=000000"
         type="image/x-icon">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
@@ -43,10 +44,7 @@
     <main>
         <section class="bem-vindo">
             <h2>Bem-Vindo(a) ao nosso Blog</h2>
-            <p>Bem-vindo ao nosso blog colaborativo, um espaço onde amigos se reúnem para compartilhar suas paixões e
-                experiências. Cada página de nossos colaboradores oferece um vislumbre único sobre suas vidas,
-                interesses e conhecimentos. Explore e descubra um pouco mais sobre cada um de nós através de nossos
-                conteúdos exclusivos.</p>
+            <p>Bem-vindo ao nosso blog colaborativo, um espaço onde amigos se reúnem para compartilhar suas paixões e experiências. Cada página de nossos colaboradores oferece um vislumbre único sobre suas vidas, interesses e conhecimentos. Explore e descubra um pouco mais sobre cada um de nós através de nossos conteúdos exclusivos.</p>
         </section>
 
         <section class="cards">
@@ -55,39 +53,45 @@
                 <img src="./src/imagens/cartao-fotografia.webp" alt="Coffe - O Fotógrafo">
                 <p>Coffe tem um olhar único para capturar a beleza do mundo através das lentes de sua câmera. Em sua
                     página, você encontrará uma coleção de fotografias que refletem sua visão artística e paixão por
-                    documentar momentos especiais.</p>
+                    documentar momentos especiais.</p> <br> <p> Acesse: <a href="#" target="_blank" rel="noopener noreferrer">#</a></p>
             </article>
             <article class="card" id="carlos">
                 <h2>Carlos - O Capoeirista</h2>
                 <img src="./src/imagens/cartao-capoeira.webp" alt="Carlos - O Capoeirista">
                 <p>Carlos é um capoeirista apaixonado que vive e respira a arte da Capoeira. Em sua página, ele explora
                     a história, os movimentos e a cultura por trás desta arte marcial brasileira. Aprenda mais sobre a
-                    Capoeira e como ela combina luta, dança e música em uma forma de expressão única.</p>
+                    Capoeira e como ela combina luta, dança e música em uma forma de expressão única.</p> <br> <p> Acesse: <a href="https://carlosvfb.github.io/blog-carlos/" target="_blank" rel="noopener noreferrer">Blog Capoeira</a></p>
             </article>
             <article class="card" id="decfalter">
                 <h2>Decfalter - O Speedcuber</h2>
                 <img src="./src/imagens/cartao-cubomagico.webp" alt="Decfalter - O Speedcuber">
                 <p>Decfalter é um verdadeiro mestre do Cubo Mágico. Ele compartilha um trecho da evolução do cubo
                     mágico, desde sua criação até os dias contemporâneos. Acompanhe sua postagem para deslumbrar sobre
-                    um pouco mais sobre o assunto.</p>
+                    um pouco mais sobre o assunto.</p> <br> <p> Acesse: <a href="./src/paginas/decfalter/index.html" target="_blank" rel="next">Cubo Mágico - O desafio icônico!</a></p>
             </article>
             <article class="card" id="emo">
                 <h2>Emo - O Tatuador</h2>
                 <img src="./src/imagens/cartao-tatuagem.webp" alt="Emo - O Tatuador">
                 <p>Emo é um tatuador talentoso que transforma a pele em uma tela viva. Em sua página, ele mostra seus
                     designs criativos e fala sobre o processo de criação e a arte de tatuar. Conheça suas inspirações e
-                    veja como ele transforma ideias em arte corporal.</p>
+                    veja como ele transforma ideias em arte corporal.</p> <br> <p> Acesse: <a href="./src/paginas/emoraro/index.html" target="_blank" rel="next">Conhecendo a Tatuagem</a></p>
             </article>
         </section>
     </main>
 
     <footer>
+        <div class="info-container">
+            <div class="info-icon" onclick="toggleInfo()">&#8505;</div>
+            <div class="info-text">
+                Página atualizada em <span id="data-atualizacao"></span>
+            </div>
+        </div>
         <p><i class="fas fa-code-branch"></i> 2024 Blog Colaborativo | Código aberto.</p>
         <p>Licenciado sob a <a href="https://opensource.org/licenses/MIT" target="_blank"
                 rel="noopener noreferrer"><strong>Licença MIT</strong></a></p>
     </footer>
 
-    <button id="toggle-mode" aria-label="Alternar modo escuro/claro">🌙</button>
+    <button id="toggle-mode" aria-label="Alternar modo escuro/claro"><i class="bi bi-brightness-high-fill"></i></button>
     <script src="./js/script.js" defer></script>
 </body>
 
