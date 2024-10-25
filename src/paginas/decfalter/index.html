@@ -4,91 +4,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog colaborativo onde amigos compartilham suas paixões e experiências.">
-    <meta name="author" content="Brian Muniz Silveira">
-    <meta name="keywords" content="blog, colaborativo, fotografias, capoeira, cubo mágico, tatuagem, brawlhalla">
-    <meta property="og:title" content="Blog Colaborativo">
-    <meta property="og:description" content="Um espaço para explorar as paixões e interesses dos nossos colaboradores.">
-    <meta property="og:image" content="https://img.icons8.com/?size=100&id=55004&format=png&color=000000">
-    <meta property="og:url" content="http://seusite.com">
-    <link rel="stylesheet" href="./estilos/estilos.css">
-    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=55004&format=png&color=000000"
-        type="image/x-icon">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <title>Cubo Mágico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&family=Raleway:wght@400;700&family=Bree+Serif&family=Amatic+SC:wght@400;700&family=Pacifico&family=Roboto:wght@400;700&family=Orbitron:wght@400;700&family=Exo:wght@400;700&family=Great+Vibes&family=Rock+Salt&family=Blackletter&family=Bangers&family=Press+Start+2P&family=Cinzel:wght@400;700&display=swap">
-    <title>Blog Colaborativo</title>
 </head>
 
 <body>
-    <header>
-        <a href="#" aria-label="Voltar para a página inicial">
-            <img src="https://img.icons8.com/?size=100&id=55004&format=png&color=000000"
-                alt="Logo do Blog Colaborativo">
-        </a>
-        <nav>
-            <div class="menu-icon" onclick="toggleMenu()" aria-label="Menu de navegação">☰</div>
-            <ul class="nav-links">
-                <li><a href="#">Coffe - Fotografias</a></li>
-                <li><a href="https://carlosvfb.github.io/blog-carlos/" target="_blank" rel="noopener noreferrer">Carlos - Capoeira</a></li>
-                <li><a href="./src/paginas/decfalter/index.html">Decfalter - Cubo Mágico</a></li>
-                <li><a href="./src/paginas/emoraro/index.html">Emo - Tatuagem</a></li>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="profile">
+                <img src="https://imgs.search.brave.com/cEh-6uFK2RTJtj27TxOOjcsAuIXYUd0N6R_-PGBQkBM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ydXdp/eC5jb20vcGljcy9h/cnRpY2xlcy9zb2x2/ZS1ydWJpeC1jdWJl/LWNvbXBsaWNhdGVk/LnBuZw"
+                    alt="Cubo Mágico">
+                <h1>Cubo Mágico</h1>
+                <p>O desafio icônico!</p>
+            </div>
+            <ul>
+                <div class="close-btn" onclick="toggleSidebar()">&times;</div>
+                <li><a href="#home" class="nav-link" onclick="toggleSidebar()">Início</a></li>
+                <li><a href="#about" class="nav-link" onclick="toggleSidebar()">Sobre o Cubo</a></li>
+                <li><a href="#history" class="nav-link" onclick="toggleSidebar()">História</a></li>
+                <li><a href="#solving" class="nav-link" onclick="toggleSidebar()">Como Resolver</a></li>
+                <li><a href="#tips" class="nav-link" onclick="toggleSidebar()">Dicas</a></li>
+                <li><a href="#bonus" class="nav-link" onclick="toggleSidebar()">Bônus</a></li>
+                <li><a href="#dev" class="nav-link" onclick="toggleSidebar()">Desenvolvido por</a></li>
             </ul>
         </nav>
-    </header>
-    
 
-    <main>
-        <section class="bem-vindo">
-            <h2>Bem-Vindo(a) ao nosso Blog</h2>
-            <p>Bem-vindo ao nosso blog colaborativo, um espaço onde amigos se reúnem para compartilhar suas paixões e
-                experiências. Cada página de nossos colaboradores oferece um vislumbre único sobre suas vidas,
-                interesses e conhecimentos. Explore e descubra um pouco mais sobre cada um de nós através de nossos
-                conteúdos exclusivos.</p>
-        </section>
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Home Section -->
+            <section id="home">
+                <div class="hamburger toggle-button" onclick="toggleSidebar()">
+                    &#9776; <!-- Ícone de hambúrguer -->
+                </div>
+                <h2>Bem-vindo ao mundo do <span class="highlight">Cubo Mágico</span></h2>
+                <p>Prepare-se para embarcar em uma jornada fascinante que desafia sua mente e habilidades! O Cubo
+                    Mágico, um ícone de lógica e estratégia, não é apenas um brinquedo; é um quebra-cabeça que cativa
+                    milhões ao redor do globo. Desde sua invenção, este enigma tridimensional tem desafiado e encantado
+                    pessoas de todas as idades, estimulando a criatividade e a resolução de problemas. Está pronto para
+                    desvendar os segredos desse fenômeno mundial? Venha explorar a mágica por trás do cubo mais famoso
+                    do mundo!</p>
+            </section>
 
-        <section class="cards">
-            <article class="card" id="coffee">
-                <h2>Coffe - O Fotógrafo</h2>
-                <img src="./src/imagens/cartao-fotografia.webp" alt="Coffe - O Fotógrafo">
-                <p>Coffe tem um olhar único para capturar a beleza do mundo através das lentes de sua câmera. Em sua
-                    página, você encontrará uma coleção de fotografias que refletem sua visão artística e paixão por
-                    documentar momentos especiais.</p>
-            </article>
-            <article class="card" id="carlos">
-                <h2>Carlos - O Capoeirista</h2>
-                <img src="./src/imagens/cartao-capoeira.webp" alt="Carlos - O Capoeirista">
-                <p>Carlos é um capoeirista apaixonado que vive e respira a arte da Capoeira. Em sua página, ele explora
-                    a história, os movimentos e a cultura por trás desta arte marcial brasileira. Aprenda mais sobre a
-                    Capoeira e como ela combina luta, dança e música em uma forma de expressão única.</p>
-            </article>
-            <article class="card" id="decfalter">
-                <h2>Decfalter - O Speedcuber</h2>
-                <img src="./src/imagens/cartao-cubomagico.webp" alt="Decfalter - O Speedcuber">
-                <p>Decfalter é um verdadeiro mestre do Cubo Mágico. Ele compartilha um trecho da evolução do cubo
-                    mágico, desde sua criação até os dias contemporâneos. Acompanhe sua postagem para deslumbrar sobre
-                    um pouco mais sobre o assunto.</p>
-            </article>
-            <article class="card" id="emo">
-                <h2>Emo - O Tatuador</h2>
-                <img src="./src/imagens/cartao-tatuagem.webp" alt="Emo - O Tatuador">
-                <p>Emo é um tatuador talentoso que transforma a pele em uma tela viva. Em sua página, ele mostra seus
-                    designs criativos e fala sobre o processo de criação e a arte de tatuar. Conheça suas inspirações e
-                    veja como ele transforma ideias em arte corporal.</p>
-            </article>
-        </section>
-    </main>
 
-    <footer>
-        <p><i class="fas fa-code-branch"></i> 2024 Blog Colaborativo | Código aberto.</p>
-        <p>Licenciado sob a <a href="https://opensource.org/licenses/MIT" target="_blank"
-                rel="noopener noreferrer"><strong>Licença MIT</strong></a></p>
-    </footer>
+            <!-- About Section -->
+            <section id="about">
+                <h2>Sobre o Cubo Mágico</h2>
+                <p>O Cubo Mágico, também conhecido como Cubo de Rubik, transcende a definição de um simples
+                    quebra-cabeça; ele é um verdadeiro ícone cultural que uniu gerações. Desde a sua criação em 1974,
+                    este enigma tridimensional não só desafiou a lógica e a paciência de milhões de pessoas ao redor do
+                    mundo, mas também se tornou uma forma de arte e expressão. Cada movimento e rotação oferece uma nova
+                    oportunidade para a solução, transformando cada tentativa em uma emocionante jornada de aprendizado
+                    e descoberta.</p>
+                <div class="stats">
+                    <div>350+ Combinações Possíveis</div>
+                    <div>43 Quintilhões de Posicionamentos</div>
+                    <div>Popular em Todo o Mundo</div>
+                    <div>400 Milhões de Cubos Vendidos</div>
+                    <div>Recorde Mundial: 3.13 segundos</div>
+                    <div>Mais de 200 Eventos de Competição Anuais</div>
+                    <div>Versões em Mais de 30 Idiomas</div>
+                </div>
+            </section>
 
-    <button id="toggle-mode" aria-label="Alternar modo escuro/claro">🌙</button>
-    <script src="./js/script.js" defer></script>
+
+            <!-- History Section -->
+            <section id="history">
+                <h2>História do Cubo Mágico</h2>
+                <p>O Cubo Mágico, inventado em 1974 pelo arquiteto húngaro <strong>Ernő Rubik</strong>, começou como uma
+                    ferramenta didática destinada a ajudar seus alunos a entender conceitos de geometria e espaço.
+                    Inicialmente chamado de "Cubo Mágico", ele rapidamente se transformou em um fenômeno global,
+                    capturando a imaginação de pessoas de todas as idades.</p> <br>
+                <p>Após sua apresentação ao público em 1980, o cubo rapidamente se tornou um dos brinquedos mais
+                    vendidos da história, com mais de <strong>350 milhões de unidades</strong> comercializadas em todo o
+                    mundo. Sua popularidade disparou, levando à criação de competições e uma comunidade dedicada de
+                    entusiastas e solucionadores.</p> <br>
+                <p>Durante os anos 80, o cubo ganhou status icônico, simbolizando a era da lógica e da resolução de
+                    problemas. Diversas variações e versões foram lançadas, incluindo o cubo 2x2, 4x4, e até mesmo
+                    versões eletrônicas, expandindo sua base de fãs e desafiando novas gerações a dominá-lo.</p> <br>
+                <p>Hoje, o Cubo Mágico não é apenas um brinquedo; é uma arte, uma competição e uma forma de expressão.
+                    Competições internacionais, como o <strong>Campeonato Mundial de Cubo Mágico</strong>, reúnem os
+                    melhores solucionadores do mundo, onde recordes são quebrados e novas técnicas são compartilhadas.
+                </p> <br>
+                <p>Assim, a história do Cubo Mágico é uma jornada de inovação, criatividade e união, mostrando como um
+                    simples quebra-cabeça pode inspirar e conectar pessoas ao redor do globo.</p>
+            </section>
+
+
+            <!-- Solving Section -->
+            <section id="solving">
+                <h2>Como Resolver o Cubo Mágico</h2>
+                <p>Resolver o Cubo Mágico pode parecer uma tarefa intimidadora, mas com as técnicas certas e prática, qualquer um pode dominá-lo! Nesta seção, você aprenderá dois dos métodos mais populares de resolução, que variam em complexidade e são usados por iniciantes e campeões.</p>
+                <div class="solving-grid">
+                    <div>
+                        <strong>Método de Camadas</strong><br>
+                        O Método de Camadas é uma técnica básica que ensina a resolver o cubo camada por camada. Ideal
+                        para iniciantes, este método envolve três etapas principais:
+                        <ul>
+                            <li><strong>Primeira Camada:</strong> Comece resolvendo a cruz e, em seguida, as cantos.
+                            </li>
+                            <li><strong>Segunda Camada:</strong> Use algoritmos simples para posicionar as peças da
+                                segunda camada.</li>
+                            <li><strong>Última Camada:</strong> Resolva a última camada utilizando sequências
+                                específicas de movimentos.</li>
+                        </ul>
+                        <img src="./imagens/camadas.webp" alt="Metodo de Camadas">
+                        <p>Praticar este método é uma excelente maneira de entender os fundamentos da resolução do cubo.</p>
+                    </div>
+                    <div>
+                        <strong>Método de Fridrich</strong><br>
+                        O Método de Fridrich, também conhecido como CFOP (Cross, F2L, OLL, PLL), é uma técnica avançada
+                        utilizada por muitos campeões de velocidade. Este método se divide em quatro etapas:
+                        <ul>
+                            <li><strong>Cruz (Cross):</strong> Forme uma cruz na camada inferior.</li>
+                            <li><strong>F2L (First Two Layers):</strong> Resolva simultaneamente as duas primeiras
+                                camadas.</li>
+                            <li><strong>OLL (Orientation of the Last Layer):</strong> Oriente todas as peças da última
+                                camada.</li>
+                            <li><strong>PLL (Permutation of the Last Layer):</strong> Permute as peças da última camada
+                                para a posição final.</li>
+                        </ul>
+                        <img src="https://cdn.shopify.com/s/files/1/0270/0342/0758/files/image2_f2580239-afb3-4168-93d3-0454b2fb6340_480x480.png?v=1682953504" alt="CFOP" width="480" height="270">
+                        Este método é mais rápido e eficiente, permitindo que os solucionadores alcancem tempos
+                        impressionantes.
+                    </div>
+                </div>
+                <p>Independentemente do método que você escolher, a prática é essencial! Dicas, tutoriais em vídeo e
+                    comunidades online estão disponíveis para ajudá-lo em sua jornada de resolução. Boa sorte!</p>
+            </section>
+
+
+            <!-- Tips Section -->
+            <section id="tips">
+                <h2>Dicas para Solucionar</h2>
+                <p>Resolver o Cubo Mágico pode ser um desafio empolgante, mas algumas dicas práticas podem ajudar a
+                    aprimorar suas habilidades e acelerar seu progresso. Aqui estão algumas sugestões para otimizar sua
+                    experiência de resolução:</p> 
+                <ul>
+                    <li><strong>Pratique Regularmente:</strong> A prática constante é fundamental para melhorar sua
+                        memória e agilidade. Dedique alguns minutos todos os dias para resolver o cubo e, aos poucos,
+                        você notará progresso.</li>
+                    <li><strong>Assista a Vídeos de Resolução:</strong> Vídeos tutoriais são uma excelente maneira de
+                        visualizar as técnicas em ação. Procure por canais no YouTube que oferecem explicações
+                        detalhadas e dicas úteis para cada método.</li>
+                    <li><strong>Use Aplicativos para Praticar:</strong> Existem diversos aplicativos disponíveis que
+                        simulam o cubo e oferecem desafios interativos. Eles ajudam a acompanhar seu progresso e
+                        fornecem algoritmos para praticar.</li>
+                    <li><strong>Participe de Comunidades:</strong> Junte-se a grupos e fóruns online dedicados ao Cubo
+                        Mágico. Trocar experiências e dicas com outros entusiastas pode ser uma fonte valiosa de
+                        motivação e aprendizado.</li>
+                    <li><strong>Mantenha a Calma:</strong> A resolução do cubo pode ser frustrante, especialmente quando
+                        você está tentando melhorar seu tempo. Lembre-se de fazer pausas e manter a calma. A clareza
+                        mental é essencial para solucionar o cubo eficientemente.</li>
+                    <li><strong>Desenvolva seu Próprio Estilo:</strong> À medida que você se torna mais confiante,
+                        comece a explorar diferentes métodos e descubra o que funciona melhor para você. Cada
+                        solucionador tem seu próprio estilo único!</li>
+                    <li><strong>Defina Metas Realistas:</strong> Ao começar, defina metas pequenas e alcançáveis, como
+                        resolver o cubo em menos de 2 minutos. Isso ajudará a manter sua motivação alta e a medir seu
+                        progresso de forma eficaz.</li>
+                </ul>
+                <p>Seguir essas dicas não só tornará a experiência de resolver o Cubo Mágico mais prazerosa, mas também
+                    ajudará você a se tornar um solucionador mais habilidoso. Boa sorte e divirta-se!</p>
+            </section>
+
+
+            <!-- Bonus Section -->
+            <section id="bonus">
+                <h2>Bônus: Minhas Inspirações</h2>
+                <p>Ao longo da minha jornada no mundo do Cubo Mágico, encontrei várias pessoas que me inspiraram e
+                    motivaram a continuar aprendendo e me aprimorando. Aqui estão algumas das minhas maiores
+                    inspirações:</p> <br>
+
+                <div class="inspiration">
+                    <h3>Suzane Coelho</h3>
+                    <p>Como Youtuber e entusiasta do Cubo Mágico, Suzane Coelho se destacou por sua abordagem leve e
+                        divertida ao ensinar técnicas de resolução. Seus tutoriais não apenas facilitam o aprendizado,
+                        mas também tornam o processo muito mais agradável. Ela tem o talento de transformar desafios em
+                        momentos de diversão, sempre incentivando seus seguidores a persistirem, mesmo diante das
+                        dificuldades. Aprendi muito com suas dicas e truques, e sou grato por sua influência positiva!
+                    </p>
+                </div> <br>
+
+                <div class="inspiration">
+                    <h3>Max Park</h3>
+                    <p>Max Park é um verdadeiro fenômeno no mundo do Cubo Mágico. Como recordista mundial, suas
+                        habilidades são extraordinárias e complexas, mostrando o que é possível alcançar com dedicação e
+                        prática. O seu estilo de resolver o cubo é não apenas técnico, mas também repleto de paixão, o
+                        que o torna uma fonte de inspiração para muitos. Max é um lembrete constante de que, com
+                        esforço, podemos superar nossos limites e atingir grandes feitos!</p>
+                </div> <br>
+
+                <div class="inspiration">
+                    <h3>Caio Sato</h3>
+                    <p>Considerado o maior medalista brasileiro no cenário de competições de Cubo Mágico, Caio Sato é
+                        uma figura que representa excelência e perseverança. Suas conquistas não apenas elevam o nome do
+                        Brasil no mundo do cubo, mas também inspiram novos solucionadores a se dedicarem e sonharem
+                        grande. Caio exemplifica a ideia de que, com muito trabalho e paixão, podemos alcançar o sucesso
+                        em qualquer área!</p>
+                </div>
+
+                <p>Esses três indivíduos me motivam a continuar minha jornada no Cubo Mágico, e sou eternamente grato
+                    por suas contribuições ao mundo do quebra-cabeça. Cada um deles, à sua maneira, demonstra que a
+                    paixão e a determinação podem nos levar longe!</p>
+            </section>
+
+            <!-- Dev Section -->
+            <section id="dev">
+                <h2>Desenvolvido por Brian Muniz</h2>
+                <p>Olá! Meu nome é Brian Muniz e sou o autor desta página dedicada ao fascinante mundo do Cubo Mágico.
+                    Minha jornada com o cubo começou em setembro de 2022, quando uma nova colega de classe me apresentou
+                    a esse intrigante quebra-cabeça. Fiquei impressionado com a velocidade com que ela conseguia
+                    resolver o cubo, e isso despertou em mim uma vontade irresistível de aprender também.</p> <br>
+
+                <p>Como uma pessoa naturalmente competitiva, não consegui aceitar a ideia de que ela sabia montar o cubo
+                    e eu não. Foi então que decidi que precisava aprender. Com a ajuda dela, comecei a praticar o Método
+                    de Camadas. Além disso, recebi dicas valiosas de uma prima que também era apaixonada pelo cubo e
+                    assisti a diversos vídeos da Youtuber Suzane Coelho, que tornaram o processo de aprendizagem muito
+                    mais divertido e acessível.</p> <br>
+
+                <p>No dia 3 de março de 2024, tomei uma decisão ousada: participei do meu primeiro campeonato de Cubo
+                    Mágico. Embora eu achasse que não conseguiria resolver o cubo em menos de 10 segundos, isso não me
+                    impediu. O desejo de competir e aprender era mais forte. Ao chegar ao local da competição, fui
+                    recebido por uma atmosfera vibrante. Muitos competidores estavam lá, uns praticando, outros
+                    conversando, e a adrenalina estava no ar. Sabia que seria uma experiência enriquecedora, e realmente
+                    foi!</p> <br>
+
+                <p>Na primeira rodada do 3x3, havia um total de 57 participantes, e terminei em 38º lugar. Embora não
+                    tenha sido uma classificação alta, cada segundo conta e essa experiência me motivou a continuar
+                    treinando. Atualmente, em outubro de 2024, estou voltando aos poucos à prática, com o objetivo de
+                    participar de mais campeonatos e, quem sabe, conquistar uma medalha. Se isso acontecer, dedicarei
+                    essa conquista à minha amiga que me ensinou a resolver o cubo e que me inspirou a seguir em frente.
+                </p> <br>
+
+                <p>Essa jornada com o Cubo Mágico tem sido uma experiência incrível, cheia de desafios e aprendizados.
+                    Espero que, assim como eu, você também se sinta inspirado a explorar e aproveitar o mundo do Cubo
+                    Mágico!</p>
+            </section>
+
+            <footer>
+                <p><i class="fas fa-code-branch"></i> 2024 Blog Colaborativo | Código aberto.</p>
+                <p>Licenciado sob a <a href="https://opensource.org/licenses/MIT" target="_blank"
+                        rel="noopener noreferrer"><strong>Licença MIT</strong></a></p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
